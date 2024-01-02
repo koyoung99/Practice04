@@ -10,7 +10,12 @@ public class Ex08 {
 			num[i] = (int) (Math.random() * 45) + 1;
 			
 			//중복제거
-			
+			for (int j = 0; j < i; j++) {
+				if (num[i] == num[j]) {
+					--j;
+					break;
+				}
+			}
 			
 			System.out.print(num[i] + "\t");
 		}
